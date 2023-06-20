@@ -1,0 +1,107 @@
+.facilities-container{
+    background-color: rgb(228, 206, 210);
+}
+.facilities-container h1{
+    text-align: center;
+    color: rgb(217, 6, 41);
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 3px;
+
+}
+.facilities-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 50px 0 50px;
+    }
+    .facilities-desc-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 50px 0 50px;
+        }
+    
+.facilities-text{
+    width: 45%;
+    text-align: start;
+    margin: 20px;
+}
+.facilities-text h2{
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    color: rgb(22, 98, 128);
+    letter-spacing: 2px;
+}
+.facilities-text p{
+    font-size: 1.3rem;
+}
+.facilities-img{
+    margin: 20px;
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.facilities-img img{
+    width: 48%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.20);
+    margin: 10px;
+    
+}
+.facilities-img img:nth-child(2){
+    position: absolute;
+    top: -10px;
+    right: 0;
+ }
+ 
+ @media screen and (max-width: 850px){
+    .facilities-container{
+        margin-top: 80px;
+        background: rgb(235, 192, 199);
+    }
+    .facilities-container h1{
+        text-align: center;
+        color: rgb(217, 6, 41);
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+    
+    }
+    
+    .facilities-desc,.facilities-desc-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .facilities-text{
+        width: 100%;
+
+    }
+    .facilities-text h2{
+        padding-bottom: 1rem;
+        font-size: 2rem;
+        color: rgb(22, 98, 128);
+        letter-spacing: 2px;
+    }
+    .facilities-text p{
+        font-size: 1.2rem;
+    }
+    
+    .facilities-img{
+        width: 100%;
+    }
+    .facilities-img img{
+        height: 250px;
+        margin: 5px;
+        
+    }
+
+ }

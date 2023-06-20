@@ -1,0 +1,126 @@
+.navbar-container{
+display: flex;
+justify-content: space-between;
+background-color: #fff;
+width: 98%;
+margin: 5px 15px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+padding: 10px;
+position: fixed;
+z-index: 1;
+top: 20px;
+}
+.navbar-container h1{
+    font-size: 1.5rem;
+    color:  rgb(183, 13, 41);
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.navbar-container .nav-menu{
+    display: flex;
+   
+}
+.navbar-container ul li{
+    list-style: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+
+   
+}
+.navbar-container ul li a{
+    text-decoration: none;
+    color: rgb(183, 13, 41);
+    
+    
+}
+.navbar-container button{
+    margin: 10px 15px;
+    font-size: 1rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.navbar-container button a{
+    text-decoration: none;
+    color:rgb(206, 9, 42);
+
+}
+.navbar-container  button:hover{
+    background-color: #222;
+    color: white;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+
+}
+
+.navbar-container ul li a:hover{
+    background-color: rgb(183, 13, 41);
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: .2s ease;
+   
+}
+
+.navbar-container ul li a.active{
+    background-color: rgb(183, 13, 41);
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+
+.icon{
+    display: none;
+}
+@media screen and (max-width: 769px) {
+    .navbar-container{
+        width: 100%;
+        margin:0 ;
+    }
+    .icon{
+        display: block;
+    }
+   .icon i {
+    color:rgb(183, 13, 41) ;
+    font-size: 2rem;
+    padding: 10px 5px 0 0;
+    cursor: pointer;
+   }
+    .navbar-container .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        position: fixed;
+        top: 90px;
+        border-radius: 8px;
+        right: -400px;
+        width: 400px;
+        height: 100vh;
+        background-color: rgb(183, 13, 41);
+        box-shadow:  0 40px 60px rgba(0, 0, 0 ,0.1);
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+      }
+     
+      .nav-menu.active{
+        right: 0px;
+      }
+      .navbar-container .nav-menu li a{
+        color: #fff;
+
+      }
+      .navbar-container .nav-menu li a:hover{
+        color: rgb(183, 13, 41);
+        background-color: #fff;
+        /* padding: 5px 230px 5px 20px ; */
+      }
+}
